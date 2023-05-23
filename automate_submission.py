@@ -6,8 +6,10 @@ import json
 kaggle_username = os.environ.get('KAGGLE_USERNAME')
 kaggle_token = os.environ.get('KAGGLE_TOKEN')
 
-files = os.listdir(os.curdir)
-print(files)
+
+print('Kaggle credentials:')
+print(f'Username: {kaggle_username}')
+print(f'Token: {kaggle_token}')
 
 # Install Kaggle CLI
 os.system('pip install kaggle')
