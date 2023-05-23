@@ -5,15 +5,15 @@ import shutil
 kaggle_username = os.environ.get('KAGGLE_USERNAME')
 kaggle_token = os.environ.get('KAGGLE_TOKEN')
 
+# Set Kaggle API credentials
+os.environ['KAGGLE_USERNAME'] = kaggle_username
+os.environ['KAGGLE_KEY'] = kaggle_token
+
 files = os.listdir(os.curdir)
 print(files)
 
 # Install Kaggle CLI
 os.system('pip install kaggle')
-
-# Authenticate Kaggle CLI
-os.system(f'kaggle config set -n username -v {kaggle_username}')
-os.system(f'kaggle config set -n key -v {kaggle_token}')
 
 # Copy sample_submission.csv from your GitHub repository
 shutil.copy('samples/sample_submission.csv', 'sample_submission.csv')
