@@ -20,5 +20,10 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Set Kaggle credentials as environment variables
+        run: |
+          echo "KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME }}" >> $GITHUB_ENV
+          echo "KAGGLE_TOKEN=${{ secrets.KAGGLE_TOKEN }}" >> $GITHUB_ENV
+
       - name: Run automation script
         run: python automate_submission.py
