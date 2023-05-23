@@ -27,3 +27,6 @@ jobs:
 
       - name: Run automation script
         run: python automate_submission.py
+
+      - name: Update accuracy score
+        run: python get_accuracy_score.py

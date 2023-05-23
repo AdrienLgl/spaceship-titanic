@@ -1,5 +1,7 @@
 # Spaceship Titanic
 
+![Accuracy Badge](https://img.shields.io/badge/accuracy-0.50-brightgreen)
+
 ![spaceship](https://c4.wallpaperflare.com/wallpaper/48/24/1013/futuristic-artwork-science-fiction-spaceship-wallpaper-preview.jpg)
 
 
