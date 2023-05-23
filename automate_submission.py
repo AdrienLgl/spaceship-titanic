@@ -6,10 +6,6 @@ import json
 kaggle_username = os.environ.get('KAGGLE_USERNAME')
 kaggle_token = os.environ.get('KAGGLE_TOKEN')
 
-# Set Kaggle API credentials
-os.environ['KAGGLE_USERNAME'] = kaggle_username
-os.environ['KAGGLE_KEY'] = kaggle_token
-
 files = os.listdir(os.curdir)
 print(files)
 
